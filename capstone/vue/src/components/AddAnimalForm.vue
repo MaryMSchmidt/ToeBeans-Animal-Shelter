@@ -66,10 +66,12 @@
       />
       <br />
       <br />
-      <button type="submit" @click.prevent="addAnimal">
-        Place for Adoption
-      </button>
-      <button @click.prevent="resetFrom">Reset</button>
+      <div id="add-buttons">
+        <button type="submit" @click.prevent="addAnimal" id="add-submit">
+          Place for Adoption
+        </button>
+        <button @click.prevent="resetFrom" id="add-reset">Reset</button>
+      </div>
     </form>
     <br />
     <animal-card
@@ -83,8 +85,12 @@
 </template>
 
 <script>
+import AnimalCard from "@/components/AnimalCard";
 import ss from "@/services/ShelterService";
 export default {
+  components: {
+    AnimalCard,
+  },
   data() {
     return {
       animal: {
@@ -159,7 +165,7 @@ form {
   border: 1px solid black;
   margin: auto;
   margin-top: 10%;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 20px 20px 20px;
   width: 600px;
   display: block;
   border-radius: 10px;
@@ -189,5 +195,25 @@ button {
   background-color: #e8e9eb;
   border-width: 1px;
   border-radius: 4px;
+}
+#add-buttons {
+  display: flex;
+
+  flex-shrink: 1;
+  background-color: #e8e9eb;
+}
+
+#relinquish-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#add-reset {
+  margin-left: 10px;
+}
+
+#add-submit {
+  background-color: #6eb8b6;
+  color: #fff;
 }
 </style>
