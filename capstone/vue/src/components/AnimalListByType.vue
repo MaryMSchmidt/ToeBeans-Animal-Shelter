@@ -107,7 +107,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #return-div {
   margin-top: 15px;
   margin-bottom: 10px;
