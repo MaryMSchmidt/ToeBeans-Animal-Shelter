@@ -132,6 +132,7 @@ export default {
         photo_link: "",
         animal_type_id: "",
       };
+      this.accepted = false;
     },
   },
 };
