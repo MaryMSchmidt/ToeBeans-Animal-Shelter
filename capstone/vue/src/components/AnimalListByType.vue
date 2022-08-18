@@ -3,6 +3,7 @@
     <div class="loading" v-if="isLoading">
       <img id="bunny" src="..\assets\hopping.gif" />
     </div>
+
     <ul class="card-container">
       <animal-card
         @click.native="goToDetailPage(animal.animal_id)"
@@ -14,6 +15,13 @@
       >
       </animal-card>
     </ul>
+
+    <div id="return-div">
+      <button id="return-btn" @click="$router.push('/animals')">
+        Back to Browse By Category
+      </button>
+    </div>
+
     <div class="bottomComponent">
       <div class="pagination">
         <button
@@ -101,6 +109,28 @@ export default {
 </script>
 
 <style>
+#return-div {
+  margin: 30px 0px 0px 30px;
+}
+
+#return-btn {
+  background-color: #44a1a0;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0px 0px 0px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
 .loading {
   margin: 20% 10% 0% 45%;
 }
