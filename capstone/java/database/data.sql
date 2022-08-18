@@ -4,10 +4,10 @@ INSERT INTO users (username,password_hash,role, password_reset) VALUES ('volunte
 
 
 
-insert into animals (name, breed, age, bio, animal_type_id) values ('Teddy', 'English Mastiff', 4, 'A big loveable lump.', 1);
-insert into animals (name, breed, age, bio, animal_type_id) values ('Gertrude', 'Bichon Frisé', 8, 'Sweet old lady that loves to snuggle.', 1);
-insert into animals (name, breed, age, bio, animal_type_id) values ('Moxie Vanderbeagle', 'Mutt', 6, 'Loves to play fetch!', 1);
-insert into animals (name, breed, age, bio, animal_type_id) values ('Maggie', 'Great Pyrenees', 4, 'Will protect you.', 1);
+insert into animals (name, breed, age, bio, animal_type_id, adopted) values ('Teddy', 'English Mastiff', 4, 'A big loveable lump.', 1, true);
+insert into animals (name, breed, age, bio, animal_type_id, adopted) values ('Gertrude', 'Bichon Frisé', 8, 'Sweet old lady that loves to snuggle.', 1, true);
+insert into animals (name, breed, age, bio, animal_type_id, adopted) values ('Moxie Vanderbeagle', 'Mutt', 6, 'Loves to play fetch!', 1, true);
+insert into animals (name, breed, age, bio, animal_type_id, adopted) values ('Maggie', 'Great Pyrenees', 4, 'Will protect you.', 1, true);
 insert into animals (name, breed, age, bio, animal_type_id) values ('Boba Fetch', 'Chihuahua/Terrier', 10, 'Will sit with you while you read.', 1);
 insert into animals (name, breed, age, bio, animal_type_id) values ('Lance', 'Chiahuahua Mix', 4, 'A little crazy and a little lazy.', 1);
 insert into animals (name, breed, age, bio, animal_type_id) values ('Roxy', 'Australian Shepherd', 4, 'Very good with kids!', 1);
