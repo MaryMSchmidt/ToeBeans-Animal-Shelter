@@ -1,31 +1,30 @@
 <template>
   <div id="whole">
-    <h2 v-if="adoptedAnimals.length === 0">No pets recently adopted :(</h2>
     <div id="one">
-      <h3 v-if="adoptedAnimals.length >= 1">
+      <p class="ptwo" v-if="adoptedAnimals.length >= 1">
         {{ adoptedAnimals[0].bio }}
-      </h3>
+      </p>
       <animal-card :animal="adoptedAnimals[0]" :photo="adoptedAnimals[0]">
       </animal-card>
     </div>
     <div id="two">
-      <h3 v-if="adoptedAnimals.length >= 2">
+      <p v-if="adoptedAnimals.length >= 2">
         {{ adoptedAnimals[1].bio }}
-      </h3>
+      </p>
       <animal-card :animal="adoptedAnimals[1]" :photo="adoptedAnimals[1]">
       </animal-card>
     </div>
     <div id="three">
-      <h3 v-if="adoptedAnimals.length >= 3">
+      <p v-if="adoptedAnimals.length >= 3">
         {{ adoptedAnimals[2].bio }}
-      </h3>
+      </p>
       <animal-card :animal="adoptedAnimals[2]" :photo="adoptedAnimals[2]">
       </animal-card>
     </div>
     <div id="four">
-      <h3 v-if="adoptedAnimals.length === 4">
+      <p class="ptwo" v-if="adoptedAnimals.length === 4">
         {{ adoptedAnimals[3].bio }}
-      </h3>
+      </p>
       <animal-card :animal="adoptedAnimals[3]" :photo="adoptedAnimals[3]">
       </animal-card>
     </div>
@@ -66,9 +65,19 @@ export default {
   margin: 0px 25px 0px 25px;
 }
 
-h2 {
+p {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   text-align: center;
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 75%;
+  background-color: #f78f66;
+  color: white;
+}
+
+.ptwo {
+  background-color: #44a1a0;
 }
 
 #one {
