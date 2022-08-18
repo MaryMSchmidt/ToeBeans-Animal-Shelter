@@ -16,13 +16,12 @@
       </animal-card>
     </ul>
 
-    <div id="return-div">
-      <button id="return-btn" @click="$router.push('/animals')">
-        Back to Browse By Category
-      </button>
-    </div>
-
     <div class="bottomComponent">
+      <div id="return-div">
+        <button id="return-btn" @click="$router.push('/animals')">
+          Back to Browse By Category
+        </button>
+      </div>
       <div class="pagination">
         <button
           id="back-btn"
@@ -110,7 +109,8 @@ export default {
 
 <style>
 #return-div {
-  margin: 30px 0px 0px 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 #return-btn {
@@ -123,7 +123,7 @@ export default {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
   margin: 0px 0px 0px 0px;
@@ -139,10 +139,11 @@ export default {
 }
 .bottomComponent {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-content: center;
   font-family: "Calibri", "Trebuchet MS", sans-serif;
   margin-right: 1.5%;
+  margin-left: 2.5%;
 }
 .card-container {
   display: flex;
